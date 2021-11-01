@@ -1,0 +1,35 @@
+
+.login-form{
+    background-color: rgb(170, 180, 177);
+}
+.register-login-btn{
+    background-color: #4e3bb9;
+    color: #ffffff;
+    height: 40px;
+    line-height: 24px;
+    padding: 6px 35px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.form-bg{
+    background-color: rgb(131, 131, 163);
+    width:363px ;
+}
+.google-signIn-btn{
+    background-color: #f26529;
+    color: #ffffff;
+    height: 40px;
+    line-height: 24px;
+    padding: 6px 35px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.login-register-heading{
+    color: #f26529;
+}

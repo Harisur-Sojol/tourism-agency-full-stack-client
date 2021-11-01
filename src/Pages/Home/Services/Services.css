@@ -1,0 +1,10 @@
+.service-header{
+    color: #ff7f47;
+}
+.service-header2{
+    font-family: "Quicksand",sans-serif;
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+}

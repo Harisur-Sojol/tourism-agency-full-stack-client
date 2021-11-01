@@ -1,0 +1,33 @@
+.footer-area{
+    background-color: rgb(13, 76, 105);
+    /* height: 200px; */
+}
+.footer-img{
+    width: 150px;  
+}
+.info{
+    list-style: none;
+    color: white;
+}
+.footer-useFull-links{
+    list-style: none;
+    color: white;
+}
+.info:hover{
+    color: #f26529;
+
+}
+.contact-list{
+    list-style: none;
+}
+.copyright-name{
+    color: #ff7f47;
+    font-size: 17px;
+}
+
+
+/* @media screen and (max-width:350px){
+    .footer-email{
+        word-wrap: wrap;
+    }
+} */

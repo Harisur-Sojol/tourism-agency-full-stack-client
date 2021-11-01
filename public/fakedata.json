@@ -1,0 +1,63 @@
+[
+    
+    {
+        "id": 1,
+        "name": "Paris Hill Tour",
+        "price": 200,
+        "description": "The Paris Hill Historic District encompasses the historic 19th century village of Paris Hill in Paris, Maine.",
+        "img": "https://i.ibb.co/23L08tg/service-Img1.png"
+    },
+
+    {
+        "id": 2,
+        "name": "Lake Garda, Italy",
+        "price": 250,
+        "description": "Lake Garda, in northern Italy, is known for its crystal clear water. At the south end, the town of Sirmione.",
+        "img": "https://i.ibb.co/TRMtJvR/service-Img2.png"
+    },
+
+    {
+        "id": 3,
+        "name": "Mount Dtna, Italyr",
+        "price": 100,
+        "description": "Mount Etna, or Etna, is an active stratovolcano on the east coast of Sicily, Italy, in the Metropolitan City of Catania",
+        "img": "https://i.ibb.co/JRrk8kC/service-Img3.png"
+
+    },
+    {
+        "id": 4,
+        "name": "Amalfi Costa, Italy",
+        "price": 300,
+        "description": "The Amalfi Coast is a 50-kilometer stretch of coastline along the southern edge of Italy’s Sorrentine Peninsula, in the Campania region.",
+        "img": "https://i.ibb.co/M1p8Z3P/service-Img4.png"
+    },
+
+    {
+        "id": 5,
+        "name": "French Rivira, France",
+        "price": 500,
+        "description": "The French Riviera (or Côte d'Azur) is the Mediterranean coast of southeastern France.",
+        "img": "https://i.ibb.co/0mwc2cH/service-Img5.png"
+    },
+
+    {
+        "id": 6,
+        "name": "Lake Geneva, France",
+        "price": 400,
+        "description": "Lake Geneva (or Lac Léman) is a crescent-shaped lake shared between France and Switzerland, and overlooked by the Alps.",
+        "img": "https://i.ibb.co/B2vqtn8/service-Img6.png"
+
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
