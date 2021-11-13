@@ -7,7 +7,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect( () => {
-        fetch('https://pacific-lake-44074.herokuapp.com/tourpackage')
+        fetch('https://lit-reef-17054.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data))
     }, [])
@@ -18,7 +18,7 @@ const Services = () => {
             <h2 className="service-header2 text-center mb-5">Select Your Best Package <br /> For Your Travel</h2>
             <div className="row g-5">
                 {
-                    services.map(service => <Service key={service.id} service={service}></Service>)
+                    services.map(service => <Service key={service._id} service={service}></Service>)
                 }
             </div>
         </div>

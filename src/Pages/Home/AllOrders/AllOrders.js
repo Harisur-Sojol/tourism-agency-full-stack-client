@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
-import './MyOrders.css';
 
-const MyOrders = () => {
+
+
+const AllOrders = () => {
     const [orders, setOrders] = useState([]);
     const [deleted, setDeleted] = useState(null);
     const { user } = useAuth();
+    const history = useHistory()
 
     const email = user.email;
 
     useEffect(() => {
-        fetch(`https://lit-reef-17054.herokuapp.com/myOrders/${email}`)
+        fetch(`https://lit-reef-17054.herokuapp.com/allOrders`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [orders]);
 
 
-    const handleDelete = (id) => {
+
+    const handleDelete = id => {
+        console.log(id)
         const proceedToDelete = window.confirm("Are you sure , you want to delete?")
         if (proceedToDelete) {
             fetch(`https://lit-reef-17054.herokuapp.com/deleteOrder/${id}`, {
@@ -26,8 +30,8 @@ const MyOrders = () => {
                 headers: { "content-type": "application/json" }
             })
                 .then(res => res.json())
-                .then(data => {
-                    if (data.deletedCount > 0) {
+                .then(orders => {
+                    if (orders.deletedCount > 0) {
                         setDeleted(true)
                     }
                     else {
@@ -35,6 +39,20 @@ const MyOrders = () => {
                     }
                 })
         }
+    }
+
+    const handleUpdating = id =>{
+        console.log(id)
+        fetch(`https://lit-reef-17054.herokuapp.com/updateOrder/${id}`, {
+          method: "PUT",
+          headers: { "content-type": "application/json" },
+        })
+          .then((res) => res.json())
+        .then(data => {
+            if(data.modifiedCount){
+                alert('Are you sure you want to update your order?')
+            }
+        })
     }
 
 
@@ -51,7 +69,7 @@ const MyOrders = () => {
             </h2>
             <div className="underline-div mx-auto mb-3"></div>
             <div className="container">
-                <Table striped bordered hover>
+                <Table striped bordered hover className="table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -74,15 +92,15 @@ const MyOrders = () => {
                                 <td>{order.status}</td>
                                 <td>${order.price}</td>
                                 <td>
-                                    {/* <Link to={`/placeOrder/${order._id}`}>
-                                        <button className=" btn bg-warning">Buy Now</button>
-                                    </Link> */}
+                                    <button onClick={() => handleUpdating(order._id)} className="btn bg-warning text-white">
+                                        Update
+                                    </button>
                                     <button
                                         onClick={() => handleDelete(order._id)}
-                                        className="btn bg-danger text-white order-delete-btn ms-1"
+                                        className="btn order-delete-btn bg-danger text-white ms-1"
 
                                     >
-                                        Delete
+                                        delete
                                     </button>
                                 </td>
                             </tr>
@@ -100,9 +118,8 @@ const MyOrders = () => {
                     </tbody>
                 </Table>
             </div>
-            );
         </div>
     );
 };
 
-export default MyOrders;
+export default AllOrders;

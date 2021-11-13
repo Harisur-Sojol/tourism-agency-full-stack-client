@@ -16,21 +16,18 @@ const Login = () => {
         signInUsingGoogle()
             .then(result => {
                 history.push(redirect_uri);
-                // console.log(redirect_uri)
             })
     }
 
    const handleSignIn = (e) => {
-    e.preventDefault();
-
-    
+    e.preventDefault();  
 }
 
     return (
         <>
         <div className=''>
             <h2 className='fst-italic fw-normal login-register-heading text-center mt-5'>Please log in to your account</h2>
-            <p className='  mt-4 fs-5 fst-italic text-center fw-normal'>Login with Email & Password</p>
+            <p className='  mt-4 fs-5 fst-italic text-center fw-normal'>Only Google Sign In</p>
             <div className="container">
                 <div className="d-flex justify-content-center align-items-center form-bg m-auto">
                     <form onSubmit={handleSignIn} className="w-75" >

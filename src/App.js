@@ -10,8 +10,11 @@ import Login from './Pages/Login/Login/Login'
 import ServiceDetail from "./Pages/Home/ServiceDetail/ServiceDetail";
 import AuthProvider from "./Context/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
-
-
+import AddDestination from "./Pages/Home/AddDestination/AddDestination";
+import MyOrders from "./Pages/Home/MyOrders/MyOrders";
+import AllOrders from "./Pages/Home/AllOrders/AllOrders";
+import Guide from "./Pages/Home/Guide/Guide";
+import AboutUs from "./Pages/Home/AboutUs/AboutUs";
 
 
 function App() {
@@ -31,11 +34,26 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
+            <Route path="/tourGuide">
+              <Guide></Guide>
+            </Route>
+            <Route path="/aboutUs">
+              <AboutUs></AboutUs>
+            </Route>
             <PrivateRoute path="/serviceDetail/:id">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
+            <Route path="/myOrders">
+              <MyOrders></MyOrders>
+            </Route>
+            <Route path="/addDestination">
+              <AddDestination></AddDestination>
+            </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/allOrders">
+              <AllOrders></AllOrders>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
@@ -44,7 +62,6 @@ function App() {
           <Footer></Footer>
         </Router>
       </AuthProvider>
-
     </div>
   );
 }

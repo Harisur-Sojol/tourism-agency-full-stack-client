@@ -1,0 +1,38 @@
+.guide-img{
+    width: 310px;
+}
+.guide-header{
+    font-family: "Quicksand",sans-serif;
+}
+.guide-experience{
+    color: #ff7f47;
+}
+
+.guide-name{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #262339;
+}
+
+.designation{
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fab-icon{
+    margin-top: 17px;
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 300px;
+    color: rgb(165, 162, 162);
+    background-color: rgb(236, 231, 231);
+    width: 32px;
+    height: 28px;
+    border-radius: 15px;
+}
+.fab-icon:hover{
+    background-color: #ff7f47;
+    color: white;
+}

@@ -1,0 +1,19 @@
+.add-destination{
+    background-color: gray;
+    box-shadow: 2px 5px 10px white;
+    border-radius: 5px;
+    width: 362px;
+    margin: auto;
+    padding: 10px 0;
+}
+.add-destination form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-destination form input, textarea{
+    width: 80%;
+    margin-bottom: 10px;
+   
+}

@@ -1,0 +1,30 @@
+
+.error-header1{
+    font-size: 80px;
+    font-weight: 700;
+    color: #262339;
+    margin-bottom: 60px;
+    line-height: 1;
+}
+.error-header2{
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 44px;
+    color: #262339;
+}
+.error-btn{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    background: #ff7f47;
+    padding: 18px 50px;
+    border-radius: 10px;
+    transition: all .6s;
+    border: none;
+    margin-top: 20px;
+}
+.error-btn:hover{
+    background-color: #343a40;
+    
+}

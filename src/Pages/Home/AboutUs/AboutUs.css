@@ -1,0 +1,27 @@
+.card-img{
+    width: 150px;
+    border-radius: 80px;
+}
+.traveller-header1{
+    color: #ff7f47;
+}
+.traveller-header2{
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: capitalize;
+    font-family: "Quicksand",sans-serif;
+    font-style: normal;
+}
+.traveller-card{
+    box-shadow: 1px 1px 3px 3px rgb(189, 185, 185);
+    border-radius: 10px;
+}
+.about-header1{
+    color: #ff7f47;
+}
+.about-header2{
+    font-family: "Quicksand",sans-serif;
+}
+.aboutUs-img{
+    width: 356px;
+}
